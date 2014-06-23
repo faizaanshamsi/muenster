@@ -1,4 +1,6 @@
 Muenster::Application.routes.draw do
+  resources :emails
+
   resources :jobs
   resources :companies, only:[:index, :show, :new, :create, :edit, :update]
 
